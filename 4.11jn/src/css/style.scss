@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body,
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 4.5rem;
+    ul {
+        width: 100%;
+        height: 4.5rem;
+        display: flex;
+        flex-direction: row;
+        li {
+            width: 33.3%;
+            text-align: center;
+            height: 4.5rem;
+            line-height: 4.5rem;
+        }
+    }
+}
+
+section {
+    width: 100%;
+    flex: 1;
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+        dl {
+            width: 25%;
+            text-align: center;
+            dt {
+                width: 25%;
+                text-align: center;
+                margin-left: 27%;
+                h4 {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    text-align: center;
+                    line-height: 3.5rem;
+                }
+            }
+            dd {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    .icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 4rem;
+        margin-left: 20%;
+    }
+    .right {
+        margin-left: 10%;
+        width: 10rem;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        border-radius: 2rem;
+        border: 1px solid #ccc;
+    }
+}
