@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scaleable=no ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/fonts/iconfont.css">
+    <link rel="stylesheet" href="./src/css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+
+<body ng-controller='main'>
+    <!-- {{ msg }} -->
+    <div class="wrap">
+        <header>
+            <div class="top">
+                <ul class="left">
+                    <li ui-sref='banner' ui-sref-active='active'>精选</li>
+                    <li ui-sref='aikan' ui-sref-active='active'>爱看</li>
+                    <li ui-sref='dianshi' ui-sref-active='active'>电视剧</li>
+                    <li ui-sref='zongyi' ui-sref-active='active'>综艺</li>
+                    <li ui-sref='shaoer' ui-sref-active='active'>少儿</li>
+                    <!-- <li>电影</li>
+                    <li>娱乐</li> -->
+                </ul>
+                <div class="right">
+                    <span class="iconfont icon-shouqi-01"></span>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>
+                    <span class="iconfont icon-fangdajing"></span>
+                    <input type="text" placeholder="烈火如歌">
+                </p>
+                <div class="youxi iconfont ">
+
+                </div>
+            </div>
+        </header>
+        <section>
+
+
+            <ui-view></ui-view>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+</body>
+<script src="./src/js/lib/swiper-3.4.2.min.js"></script>
+<script src="./src/js/lib/angular.js"></script>
+<script src="./src/js/lib/angular-ui-router.js"></script>
+<script src="./src/js/common/app.js"></script>
+<script src="./src/js/common/controller.js"></script>
+<script src="./src/js/common/config.js"></script>
+
+</html>
